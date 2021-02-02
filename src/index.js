@@ -1,20 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Hello from './App';
+import MoodTracker from './MoodTracker';
 import reportWebVitals from './reportWebVitals';
 
 let person = {
-  age:'approximately 14',
-  name:'Nesso',
+  age:'30 now!',
+  name:'King',
   favorites: [
-    'Charmander',
-    'Neon Green',
-    'BMWs'
+    'Wolves',
+    'Barry\'s Tea',
+    'Figured Wood'
   ]
 };
 
 ReactDOM.render(
   <React.StrictMode>
+    <MoodTracker />
     <Hello 
       age={person.age} 
       favorites={person.favorites}
