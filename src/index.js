@@ -1,12 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import Hello from './App';
 import reportWebVitals from './reportWebVitals';
+
+let person = {
+  age:'approximately 14',
+  name:'Nesso',
+  favorites: [
+    'Charmander',
+    'Neon Green',
+    'BMWs'
+  ]
+};
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Hello 
+      age={person.age} 
+      favorites={person.favorites}
+      name={person.name} 
+    />
   </React.StrictMode>,
   document.getElementById('root')
 );
